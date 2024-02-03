@@ -1,0 +1,341 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+}
+.main{
+    display: flex;
+}
+.sidenavbar{
+    position: fixed;
+    height: 100vh;
+    width: 14vw;
+    margin: 1vw 0.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.icon{
+    padding-bottom: 5.5vw;
+    height: 3vw;
+    width: 100%;
+    padding-left: 2vw;
+    margin-bottom: 1.3vw;
+    overflow-y: hidden;
+}
+.icon svg{
+    height: 5vw;
+}
+.buttonsidebar{
+    height:fit-content;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.buttonsidebar a{
+    /* width: fit-content; */
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.buttonsidebar a{
+    background: none;
+    height: 2.5vw;
+    font-weight: 700;
+    padding: 0.2vw 1vw;
+    border: none;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:0.5vw;
+}
+.buttonsidebar a:hover{
+    background-color: #3D3DDB;
+    color: #fff;
+    box-shadow: 0px 4px 13px 0px #00000033;
+    cursor: pointer;
+
+}
+.content{
+    position: absolute;
+    left: 14vw;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: calc(100vw - 14vw - (1.5vw * 2));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0.8vw 0vw;
+    padding: 0 1.5vw;
+}
+nav .searchbar{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding:1vw 1.5vw 1vw 0vw;
+    
+}
+nav .searchbar input{
+    width: 100%;
+    height: 2.8vw;
+    border: none;
+    color: #2e2e2e;
+    border-radius: 0.4rem;
+    padding-left: 1.8vw;
+    box-shadow: 0px 4px 15px 0px #00000033;
+}
+nav .navicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.maincontent{
+    height: calc(100vh - 10vh - (0.8 * 2));
+    width: 100%;
+    gap: 2vw;
+    padding-left: 3vw;
+    padding-top: 4vw;
+}
+.admindashboard{
+    height: 14vw;
+    padding-bottom: 5vw;
+}
+.admindashboard h3{
+    color: #3D3DDB;
+    font-weight: 1000;
+    font-size: 1.8vw
+
+}
+.admindetcont{
+    padding: 1.5vw 2vw;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+.admindashboard .admincontentdiv{
+    width: 18vw;
+    height: 9vw;
+    border: none;
+    border-radius: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 15px 0px #00000040;
+}
+.admindashboard .admincontentdiv:hover{
+    width: 18.3vw;
+    height: 9.3vw;
+}
+.admindashboard .admincontentdiv .admincontentdet{
+    line-height: 3vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.admindashboard .admincontentdiv .adminicon svg{
+    height: 3.9vw;
+}
+/* Css For the Number of ADmission Class */
+.numberadmission{
+    height: 47vw;
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+}
+.numberadmission h3{
+    color: #3D3DDB;
+    position: relative;
+    right: 29.5%;
+    font-weight: 1000;
+    font-size: 1.8vw
+
+}
+.numberadmission .numberofstudgraph{
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    border: none;
+    border-radius: 0.5vw;
+}
+.numberadmission .numberofstudgraph svg{
+    box-shadow: none;
+    height: 39vw;
+    width: 40vw;
+}
+.lowercontent{
+    display: flex;
+    gap: 3vw;
+}
+.rightlowercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.students{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    width: 37vw;
+    height: 29vw;
+}
+.students h3{
+    color: #3D3DDB;
+    position: relative;
+    right: 35%;
+    font-weight: 1000;
+    font-size: 1.8vw
+}
+.studentsgraph{
+    display: flex;
+    align-items: center;
+    height: 22vw;
+    width: 35vw;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    border: none;
+    border-radius: 0.5vw;
+
+}
+.studentsgraph svg{
+    height: 20vw;
+    width: 35vw;
+}
+.topcourses{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    width: 37vw;
+    height: 29vw;
+
+}
+.topcourses h3{
+    color: #3D3DDB;
+    position: relative;
+    right: 31%;
+    font-weight: 1000;
+    font-size: 1.8vw
+}
+.topcoursesgraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22vw;
+    width: 35vw;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    border: none;
+    border-radius: 0.5vw;
+}
+.topcoursesgraph svg{
+    height: 19vw;
+    width: 33vw;
+}
+.bottomcontent{
+
+}
+.database{
+ display: flex;
+ flex-direction: column;
+ padding: 0.9vw 0vw;
+ gap: 2vw;
+}
+.database h3{
+    color: #3D3DDB;
+    /* position: relative;
+    right: 31%; */
+    font-weight: 1000;
+    font-size: 1.8vw
+}
+.databasecontent{
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 2vw;
+    height: 33vw;
+    width: 80%;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    border: none;
+    border-radius: 0.5vw;
+}
+.databasecontent svg{
+    height: 39vw;
+    width: 98%;
+}
+/* 
+
+
+
+
+
+
+
+
+
+ */
+
+
+@media (max-width:600px) {
+    .sidenavbar{
+        height: 100vh;
+        width: 40vw;
+        padding: 2vw 0.5vw;
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .icon{
+        padding-bottom: 1vw;
+        margin-bottom: 4vw;
+        height:fit-content;
+        width: 100%;
+    }
+    .buttonsidebar{
+        height:fit-content;
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .buttonsidebar a{
+        background: none;
+        height: 5.5vw;
+        padding: 0.2vw 2.5vw;
+        border: none;
+        border-radius: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .buttonsidebar a svg{
+        display: none;
+    }
+    .buttonsidebar a:hover{
+        background-color: #3D3DDB;
+        color: #fff;
+        box-shadow: 0px 4px 13px 0px #00000033;
+    }
+
+}

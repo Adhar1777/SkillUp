@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+}
+.main{
+    display: flex;
+}
+.sidenavbar{
+    position: fixed;
+    height: 100vh;
+    width: 14vw;
+    margin: 1vw 0.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.icon{
+    padding-bottom: 5.5vw;
+    height: 3vw;
+    width: 100%;
+    padding-left: 2vw;
+    margin-bottom: 1.3vw;
+    overflow-y: hidden;
+}
+.icon svg{
+    height: 5vw;
+}
+.buttonsidebar{
+    height:fit-content;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.buttonsidebar a{
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.buttonsidebar a{
+    background: none;
+    height: 2.5vw;
+    font-weight: 700;
+    padding: 0.2vw 1vw;
+    border: none;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:0.5vw;
+}
+.buttonsidebar a:hover{
+    background-color: #3D3DDB;
+    color: #fff;
+    box-shadow: 0px 4px 13px 0px #00000033;
+}
+.content{
+    overflow-y: scroll;
+    position: absolute;
+    left: 14vw;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: calc(100vw - 14vw - (1.5vw * 2));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0.8vw 0vw 0vw 0vw;
+    padding: 0 1.5vw;
+}
+nav .searchbar{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding:1vw 1.5vw 1vw 0vw;
+    
+}
+nav .searchbar input{
+    width: 100%;
+    height: 2.8vw;
+    border: none;
+    color: #2e2e2e;
+    border-radius: 0.4rem;
+    padding-left: 1.8vw;
+    box-shadow: 0px 4px 15px 0px #00000033;
+}
+nav .navicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.maincontent{
+    height: calc(100vh - 10vh - (0.8 * 2));
+    width: 100%;
+    gap: 2vw;
+    padding-left: 3vw;
+    padding-top: 2vw;
+}
+.leftcontent{
+
+}
+.topleftcontent{
+    height: 24vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.studentdetails{
+    display: flex;
+    width: 56vw;
+    border:none;
+    border-radius: 1vw;
+    background-color: #3D3DDB;
+    padding: 1vw;
+    margin-left: 1.5vw;
+}
+.studentdetails .profilephoto svg{
+    height: 13vw;
+    width: 13vw;
+}
+.studentdetails .studentsbiocont{
+    padding: 0.5vw 1.5vw;
+    display: flex;
+    height: 13vw;
+    width: 45vw;
+    flex-direction: column;
+    gap: 1vw;
+}
+.studentdetails .studentsbiocont .studentsbio p{
+    font-size: 1.4vw;
+    font-weight: 100;
+    line-height: 1.5vw;
+}
